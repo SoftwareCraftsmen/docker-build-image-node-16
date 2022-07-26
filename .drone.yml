@@ -1,0 +1,10 @@
+kind: pipeline
+type: kubernetes
+name: main
+
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: harbor.software-craftsmen.at/software-craftsmen-public/build-image-node-16
+      tags: latest
